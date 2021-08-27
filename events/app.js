@@ -5,12 +5,11 @@ new Vue({
   data: {
     title: 'Becoming a Vue developer',
     name: 'Alan',
-    url: 'http://www.youtube.com',
-    classes: ['one','two']
+    wage: 10
   },
   methods: {
-    greet(time) {
-      return `Hello and good ${time}, ${this.name}!`
+    changeWage(amount) {
+      this.wage += amount
     }
   }
 })
